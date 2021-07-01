@@ -1188,11 +1188,7 @@ stock LeaderCheck( bool:bShowMessage = true )
 
 stock bool:SetGameDescription(String:description[])
 {
-#if defined _SteamWorks_Included
-    return SteamWorks_SetGameDescription(description);
-#else
     return false;
-#endif
 }
 
 stock WriteLog( const String:szFormat[], any:... )
